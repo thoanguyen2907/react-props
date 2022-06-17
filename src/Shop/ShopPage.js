@@ -2,7 +2,9 @@ import React from "react";
 import dataJson from "./../Data/data.json";
 import ProductList from "./ProductList";
 export default function ShopPage() {
+  console.log('dataJson', dataJson);
   return (
+    //console.log();
     <div className="container-fluid">
       <div className="row">
         <div className="col-4">
@@ -45,7 +47,7 @@ export default function ShopPage() {
               role="tabpanel"
               aria-labelledby="v-pills-home-tab"
             >
-              <ProductList arrProduct={dataJson} />
+              <ProductList arrayData={dataJson} />
             </div>
             <div
               className="tab-pane fade"
