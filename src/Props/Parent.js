@@ -8,7 +8,7 @@ export default function Parent() {
 
   return (
     <div>
-      <Child propSource={src} name={name} />
+      <Child propSource={src} propsName={name} />
     </div>
   );
 }
